@@ -52,15 +52,6 @@ counts = df.groupby(["user","host"]).size().reset_index(name="cnt") # Since the 
 
 counts.head(), counts.shape
 
-"""### User Activity Mass
-$$
-u_{freq}[u] = \sum_h \mathrm{cnt}(u,h)
-$$
-### Host Popularity Mass
-$$
-h_{freq}[h] = \sum_u \mathrm{cnt}(u,h)
-$$
-"""
 
 # Subsetting (Colab Constraints + Modeling Reason)
 
